@@ -1,0 +1,27 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class FlowLayoutExample {
+    public static void main(String[] args) {
+        // Create the main frame
+        JFrame frame = new JFrame("FlowLayout Example");
+        frame.setSize(300, 200);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        // Set FlowLayout (LEFT alignment, 10px hgap, 20px vgap)
+        frame.setLayout(new FlowLayout(FlowLayout.LEFT, 10, 20));
+
+        // Create checkboxes
+        JCheckBox javaCheck = new JCheckBox("Java");
+        JCheckBox pythonCheck = new JCheckBox("Python");
+        JCheckBox cppCheck = new JCheckBox("C++");
+
+        // Add checkboxes to the frame
+        frame.add(javaCheck);
+        frame.add(pythonCheck);
+        frame.add(cppCheck);
+
+        // Display the frame
+        frame.setVisible(true);
+    }
+}
